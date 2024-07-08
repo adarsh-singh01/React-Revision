@@ -1,8 +1,13 @@
 import React from 'react'
+import { Footer, Header, Home } from './components'
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <Header/>
+      <Home />
+      <Footer />
+    </div>
   )
 }
 
