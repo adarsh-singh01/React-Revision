@@ -14,9 +14,9 @@ The official, opinionated, batteries-included toolset for efficient Redux develo
 
 ### Store
 Single source of truth
-## #Reducers
-## useSelector
-## useDispatch
+### Reducers
+### useSelector
+### useDispatch
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
