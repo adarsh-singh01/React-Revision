@@ -8,7 +8,7 @@ export const todoSlice=createSlice({
     name:'todoApp',
     initialState,
     reducers:{//functions bahar bhi define krke yaha access de skte hai
-        addTodo:(state,action)=>{
+        addTodo:(state,action)=>{//state me jo abhi pura array h todos ka wo jayega
             const todo={
                 id:nanoid(),
                 text:action.payload//kyuki jisko access krenge uska naam bhi same hai isiliye payload.text nhi likha
