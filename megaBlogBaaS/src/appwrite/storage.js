@@ -79,9 +79,9 @@ export class StorageService{
         }
     }
 
-    async getPosts(queries=[Query.equal("status","active")]){
+    async getPosts(queries = [Query.equal("status", "active")]){
         try {
-            return await this.databases.getDocument(
+            return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 queries,//yaha pe bhi wo likh skte the jo upar pass kiya h
@@ -131,4 +131,4 @@ export class StorageService{
 }
 
 const storageService=new StorageService()
-export default service
+export default storageService
